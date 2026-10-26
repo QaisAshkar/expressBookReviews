@@ -1,12 +1,6 @@
-theia@theia-qaisa:/home/project/expressBookReviews/final_project$ curl localhost:5000/isbn/1
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Error</title>
-</head>
-<body>
-<pre>Cannot GET /isbn/1</pre>
-</body>
-</html>
-
+theia@theia-qaisa:/home/project/expressBookReviews/final_project$ curl -s localhost:5000/isbn/1
+{
+    "author": "Chinua Achebe",
+    "title": "Things Fall Apart",
+    "reviews": {}
+}

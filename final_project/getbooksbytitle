@@ -1,12 +1,10 @@
-theia@theia-qaisa:/home/project/expressBookReviews/final_project$ curl localhost:5000/title/Pride%20and%20Prejudice
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Error</title>
-</head>
-<body>
-<pre>Cannot GET /title/Pride%20and%20Prejudice</pre>
-</body>
-</html>
-
+theia@theia-qaisa:/home/project/expressBookReviews/final_project$ curl -s localhost:5000/title/Pride%20and%20Prejudice
+{
+    "booksbytitle": [
+        {
+            "isbn": "8",
+            "author": "Jane Austen",
+            "reviews": {}
+        }
+    ]
+}
